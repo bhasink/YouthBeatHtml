@@ -780,12 +780,10 @@ section {
     padding: 83px 0 0 0;
     position: relative;
 	transition: all ease 0.5s;
-	transform: rotateX(70deg) translateZ(76px);
+	
 }
 
-.yt-footh.active{
-	transform: none;
-}
+
 
 
 
