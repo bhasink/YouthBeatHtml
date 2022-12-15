@@ -20,7 +20,7 @@ window.addEventListener('scroll', reveal);
 reveal();
 
 function reveal() {
-    console.log("scrolling");
+  
     var revealers = document.querySelectorAll('.revealer');
     for (var i = 0; i < revealers.length; i++) {
         var windowheight = window.innerHeight;
@@ -360,6 +360,65 @@ $(document).ready(function () {
 
       1200: {
         items: 1,
+        nav: true,
+        dots: false,
+        loop: false
+      }
+    }
+  });
+  $('.play').on('click', function () {
+    owl.trigger('play.owl.autoplay', [3000])
+  })
+  $('.stop').on('click', function () {
+    owl.trigger('stop.owl.autoplay')
+  })
+
+
+})
+
+
+
+/* slider for testimonials   */
+
+$(document).ready(function () {
+  var owl = $('.slidertst-ytb');
+  owl.owlCarousel({
+    items: 1,
+    loop: true,
+    nav:false,
+    margin: 20,
+    dots: true,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    autoplayHoverPause: true,
+   
+    responsive: {
+      0: {
+        items: 1,
+        nav: false,
+        dots: true,
+        loop: true
+      },
+      300: {
+        items: 1,
+        nav: false,
+		 center: false,
+		 autoplay: true,
+       dots: false,
+        loop: true
+      },
+
+      766: {
+        items: 2,
+        nav: false,
+        dots: false,
+        loop: true
+      },
+
+      1200: {
+        items: 2,
+		/*stagePadding: 90,
+		left: -40 ,*/
         nav: true,
         dots: false,
         loop: false
