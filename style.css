@@ -265,13 +265,20 @@ p {
 	color: #000;
 }
 
+.mainhead .subbol {
+    font-size: 24px;
+}
+
 .centheads .anmemojs {
     width: 58px;
     position: absolute;
     left: -42px;
 	    -webkit-animation-name: wobble;
+        animation-name: wobble;
     -webkit-animation-duration: 6s;
+    animation-duration: 6s;
     -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
 .mainhead .sbhds {
@@ -281,8 +288,8 @@ p {
 	margin: auto;
 }
 
-.revealer.active .mainhead .sbhds,
-.revealer.active p.curvtxt {
+.revealer.aos-init.aos-animate .mainhead .sbhds,
+.revealer.aos-init.aos-animate p.curvtxt {
 	animation: typewriter 8s, infinite normal;
 	overflow: hidden;
     white-space: nowrap;
@@ -297,7 +304,7 @@ p {
 }
 
 
-.blacklayers .owl-carousel img {
+.blacklayers .owl-carousel .item img {
     width: 50%;
     filter: grayscale(1);
 }
@@ -407,7 +414,10 @@ p {
     position: relative;
 	padding: 50px 0 0 0;
     top: -40px;
+}
 
+.showcaseytbs .mdhouseslide .owl-item.active:nth-child(even) {
+    padding-top: 0;
 }
 
 .showcaseytbs:after {
@@ -455,7 +465,7 @@ p {
 }
 
 .showcaseytbs .mdhouseslide h4 {
-    margin: 20px 0 0 0;
+    margin: 1px 0 0 0;
 }
 
 .mainhead .centheads .keyemojs {
@@ -464,8 +474,11 @@ p {
     right: -62px;
     top: -4px;
 	-webkit-animation-name: shake;
+    animation-name: shake;
     -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
     -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
 
 .partnersincr {
@@ -510,12 +523,17 @@ p {
 }
 
 
-.showcaseytbs.revealer.active h2:hover .txstrks svg {
+.showcaseytbs.revealer.aos-init.aos-animate h2:hover .txstrks svg,
+.innershowsl.revealer.aos-init.aos-animate h2:hover .txstrks svg {
     stroke-dashoffset: 0;
 	stroke-width: 1.5px;
 }
 
-
+.mobsets {
+    max-width: 295px;
+    margin: auto;
+	
+}
 
 /* css for numers services */
 
@@ -547,11 +565,11 @@ p {
 }
 
 
-.rednums {
+.servnumcounts .rednums {
     color: #ef5018;
 }
 
-.yelnums {
+.servnumcounts .yelnums {
     color: #f3c32b;
 }
 
@@ -636,7 +654,7 @@ section {
 
 /* css animation for emojis */
 
-@-webkit-keyframes shake {
+@keyframes shake {
   0%  { -webkit-transform:     translate(2px, 1px) rotate(0deg); }
   10% { -webkit-transform:     translate(-1px, -2px) rotate(-2deg); }
   20% { -webkit-transform:     translate(-3px, 0px) rotate(3deg); }
@@ -700,7 +718,7 @@ section {
 
 .cultur-comps {
     padding: 60px 0;
-    margin: 51px 0;
+    margin: 51px 0 0 0;
 }
 
 
@@ -715,7 +733,7 @@ section {
 .cultur-comps h6 {
     font-family: 'Proxima Nova';
     font-size: 24px;
-    margin-top: 40px;
+       margin: 40px 0px 30px 40px;
 }
 
 
@@ -743,6 +761,15 @@ section {
 .contactsmids {
     max-width: 800px;
     margin: auto;
+}
+
+.mapopn {
+    padding-top: 50px;
+}
+
+.mapopn iframe {
+    width: 100%;
+    height: 469px;
 }
 
 @keyframes swing {
@@ -804,11 +831,15 @@ section {
     padding: 83px 0 0 0;
     position: relative;
 	transition: all ease 0.5s;
-	transform: rotateX(70deg) translateZ(76px);
+    transform: rotateX(70deg) translateZ(76px);
 }
 
-.yt-footh.active{
-	transform: none;
+footer.yt-footh.revealer.aos-init {
+    transform: rotateX(70deg) translateZ(76px);
+}
+
+footer.yt-footh.revealer.aos-init.aos-animate {
+    transform: none;
 }
 
 
@@ -878,16 +909,16 @@ section {
 
 .rightflowrs {
     position: absolute;
-    right: 0;
-    top: 270px;
-    width: 153px;
+    right: -70px;
+    top: -40px;
+    width: 204px;
 }
 
 .outstls {
     padding: 20px;
     position: relative;
     padding-bottom: 0;
-	    max-width: 509px;
+	
     margin: auto;
 }
 
@@ -983,7 +1014,7 @@ section {
 
 
 .opps-services {
-    padding: 50px 0;
+    padding: 50px 0 0;
 }
 
 .wrk p {
@@ -1030,12 +1061,33 @@ section {
 .lastfrms h4 {
     font-size: 50px;
     margin-bottom: 20px;
+	    margin-top: 30px;
 }
 
 .lastfrms .mainhead {
     margin-bottom: 10px;
 }
 
+.coolstds {
+    position: relative;
+}
+
+.coolstds img {
+    position: absolute;
+    width: 125px;
+    left: -5px;
+    z-index: -2;
+}
+
+.jbopenings{
+	padding-top: 40px;
+}
+
+.jbopenings .coolstds img {
+    width: 184px;
+    left: -35px;
+    top: -13px;
+}
 
 /* our services */
 
@@ -1085,6 +1137,10 @@ section {
     color: #fff;
 }
 
+.innershowsl .txstrks svg {
+    stroke: #63ed29;
+}
+
 .usptargt {
     background: #000;
     padding: 47px 0 0 0;
@@ -1092,7 +1148,7 @@ section {
     overflow: inherit;
 }
 
-.usptargt p {
+.usptargt p b{
     color: #fff;
 }
 
@@ -1133,7 +1189,7 @@ section {
     width: 80%;
 }
 
-.genfrs p {
+.usptargt .genfrs p {
     color: #2568ef;
     font-family: 'Caveat';
     right: 20px;
@@ -1246,7 +1302,7 @@ section {
 
 @keyframes mainmarq {
    0% { left: 0; }
-    50% {left: -50%);}
+    50% {left: -50%;}
   100% { left: -100%; }
 }
 
@@ -1353,7 +1409,7 @@ section {
     background: #000;
     position: relative;
     padding: 60px 0;
-    height: 100vh;
+    height: 643px;
 }
 
 .slidechngrs {
@@ -1397,6 +1453,24 @@ section {
     position: relative;
 }
 
+.innershowsl {
+    position: relative;
+}
+
+.innershowsl  .mainhead .centheads{
+    font-size: 70px;
+    line-height: 66px;
+}
+
+.innershowsl {
+    height: 637px;
+    padding: 50px 0;
+}
+
+.innershowsl .desktopayout {
+    top: 0;
+}
+
 .tags-ytb {
     display: inline-flex;
 	    margin-bottom: 16px;
@@ -1438,11 +1512,83 @@ section {
 }
 
 .whatin-yb {
-    padding: 50px 0 0 0;
+    padding: 50px  0;
 }
 
 .tags-ytb.grng-cl img {
     width: 100px;
+}
+
+.innershowsl .mainhead p {
+    font-size: 19px;
+}
+
+/* new testimonial slders */
+
+.testimons-nwytb {
+    padding: 50px 0 0;
+}
+
+.txtpp {
+    position: relative;
+    height: 420px;
+}
+
+.popcolt {
+    padding: 0px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(79px);
+    width: 100%;
+    transition: all ease 0.5s;
+    background: #f35aed;
+}
+
+.popcolt .usertstm {
+    font-family: 'Proxima Nova';
+    display: block;
+    margin: 0;
+}
+
+.popcolt p {
+    transform: translateY(86px);
+    transition: all ease 0.5s;
+    padding: 9px;
+}
+
+.popcolt  .usertstm {
+    transform: translateY(-78px);
+}
+
+.txtpp:hover .popcolt p {
+    display: block;
+    transform: translateY(0px);
+    margin: 0;
+	    background: #f35aed;
+}
+
+.owl-item.active:nth-child(2) .popcolt p{
+
+}
+
+.txtpp:hover .popcolt {
+    transform: translateY(0px);
+}
+
+.owl-item.active:nth-child(2) .popcolt {
+    background: #37b7e2;
+}
+
+.owl-item.active:nth-child(3) .popcolt {
+    background: #ffe600;
+}
+
+.owl-carousel .owl-item .quoteic {
+    position: absolute;
+    width: 48px;
+    top: 55px;
+    z-index: 3;
+    right: -18px;
 }
 
 
@@ -1634,6 +1780,7 @@ section {
 .mnformsty .dropdown-menu label {
     display: block;
     padding: 3px 7px;
+    margin-bottom: 0;
 }
 
 
@@ -1651,7 +1798,10 @@ section {
 
 
 @media screen and (max-width: 767px) and (min-width: 320px){
-	
+.mdhouseslide .owl-item.active:nth-child(even) {
+    padding-top: 0;
+}
+
 .showcs-ytbs .col-md-6:nth-child(2) {
     padding: 50px 30px;
 }
@@ -1721,17 +1871,19 @@ body {
       display: none;
 }
 
-.mdhouseslide .owl-item.active.center {
+.mdhouseslide .owl-carousel .owl-item.active.center {
     transform: scale(1);
 	    filter: none;
+    transition: all ease 0.5s;
 }
 
-.mdhouseslide .owl-item{
-    transform: scale(0.9);
+.mdhouseslide .owl-carousel .owl-item{
+    transform: scale(0.8);
 	    filter: grayscale(1);
+        transition: all ease 0.5s;
 }
 
-.mdhouseslide .owl-item h4{
+.mdhouseslide .owl-carousel .owl-item h4{
 	opacity:0;
 }
 
